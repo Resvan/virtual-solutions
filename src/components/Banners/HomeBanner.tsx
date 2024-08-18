@@ -18,7 +18,7 @@ export default function HomeBanner() {
               viewport={{ once: true }}
               transition={{ staggerChildren: 3, duration: 3, type: 'spring' }}
               aria-hidden
-              className="max-w-[570px] text-white mx-4 lg:mx-72 font-rubik my-20">
+              className="max-w-[570px] text-white mx-4 lg:mx-72 font-rubik my-24">
               <div className="flex w-fit items-center">
                   <div className="w-1 h-6 bg-banner-small-head"></div>
                   <motion.h2

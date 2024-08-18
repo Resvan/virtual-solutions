@@ -27,40 +27,40 @@ export async function generateMetadata({
   return {
     title: t("title"),
     description: t("description"),
-    // alternates: {
-    //   canonical:'https://www.example.com/',
-    //   languages: {
-    //     en: 'https://www.example.com/en', 
-    //     ar: 'https://www.example.com/ar',
-    //   },
-    // },
-    // openGraph: {
-    //   title: t("title"),
-    //   description: t("description"),
-    //   url: 'https://www.davegray.codes/',
-    //   siteName: t("title"),
-    //   type: 'website',
-    //   images: [
-    //     {
-    //       url: 'images/virtual-solutions-overview.png',
-    //       secureUrl: 'images/virtual-solutions-overview.png',
-    //       width: 1200,
-    //       height: 630,
-    //       alt: 'Preview image for Virtual Solutions',
-    //     }
-    //   ]
-    // },
-    // twitter: {
-    //   card: 'summary_large_image',
-    //   site: '@virtualsolutions',
-    //   title: t("title"),
-    //   description: t("description"),
-    //   creator: '@virtualsolutions',
-    //   images: {
-    //     url: 'images/virtual-solutions-overview.png',
-    //     alt: 'Virtual Solutions',
-    //   }
-    // },
+    alternates: {
+      canonical:'https://virtualsolutions.vercel.app/',
+      languages: {
+        en: 'https://virtualsolutions.vercel.app/en', 
+        ar: 'https://virtualsolutions.vercel.app/ar',
+      },
+    },
+    openGraph: {
+      title: t("title"),
+      description: t("description"),
+      url: 'https://virtualsolutions.vercel.app/',
+      siteName: t("title"),
+      type: 'website',
+      images: [
+        {
+          url: 'images/virtual-solutions-overview.png',
+          secureUrl: 'https://virtualsolutions.vercel.app/images/virtual-solutions-overview.png',
+          width: 1200,
+          height: 630,
+          alt: 'Preview image for Virtual Solutions',
+        }
+      ]
+    },
+    twitter: {
+      card: 'summary_large_image',
+      site: '@virtualsolutions',
+      title: t("title"),
+      description: t("description"),
+      creator: '@virtualsolutions',
+      images: {
+        url: 'https://virtualsolutions.vercel.app/images/virtual-solutions-overview.png',
+        alt: 'Virtual Solutions',
+      }
+    },
   };
 }
 
