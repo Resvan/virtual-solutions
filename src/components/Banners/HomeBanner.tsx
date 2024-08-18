@@ -6,19 +6,19 @@ import { motion } from 'framer-motion';
 
 export default function HomeBanner() {
   return (
-      <section className='relative banner flex items-center'>
-          {/* <div className="w-full h-full absolute top-0 left-0 z-[-1] inset-0 object-cover">
+      <section className='relative flex items-center bg-[hsla(210,42%,18%,0.3)]'>
+          <div className="w-full h-full absolute top-0 left-0 z-[-1] inset-0 object-cover">
               <video className="w-full h-full object-cover object-center" loop autoPlay muted poster="/images/home-banner-img.png">
                   <source src="/videos/virtual-background-video.mp4" type="video/mp4"/>
               </video>
-          </div> */}
+          </div>
           <motion.div
               initial={{ opacity: 0, x:-50 }}
               animate={{ opacity: 1, x:0 }}
               viewport={{ once: true }}
               transition={{ staggerChildren: 3, duration: 3, type: 'spring' }}
               aria-hidden
-              className="max-w-[570px] text-white mx-4 lg:mx-72 font-rubik pt-20">
+              className="max-w-[570px] text-white mx-4 lg:mx-72 font-rubik my-20">
               <div className="flex w-fit items-center">
                   <div className="w-1 h-6 bg-banner-small-head"></div>
                   <motion.h2

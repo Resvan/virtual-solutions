@@ -54,7 +54,7 @@ export default function HamburgerMenu({ navLinks }: HamburgerMenuProps) {
                 isOpen &&
                 (
                     <nav
-                        className={`absolute top-full right-0 w-full bg-white transform transition-transform duration-300 ${isOpen ? 'translate-y-0' : '-translate-y-full'
+                        className={`absolute top-full right-0 w-full bg-white transform transition-transform duration-300 z-[10] ${isOpen ? 'translate-y-0' : '-translate-y-full'
                             } md:translate-y-0`}
                     >
                         {
