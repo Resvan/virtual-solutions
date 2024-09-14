@@ -2,14 +2,15 @@
 import Image from "next/image";
 import RippleButton from "../RippleButton";
 import { motion } from 'framer-motion';
+import LableHeading from "../LabelHeading.tsx/LableHeading";
 
 
 export default function HomeBanner() {
   return (
-      <section className='relative flex items-center bg-[hsla(210,42%,18%,0.3)]'>
+      <section className='flex items-center bg-[hsla(210,42%,18%,0.3)]'>
           <div className="w-full h-full absolute top-0 left-0 z-[-1] inset-0 object-cover">
               <video className="w-full h-full object-cover object-center" loop autoPlay muted poster="/images/home-banner-img.png">
-                  <source src="/videos/virtual-background-video.mp4" type="video/mp4"/>
+                  <source src="/videos/2711276-uhd_3840_2160_24fps.mp4" type="video/mp4"/>
               </video>
           </div>
           <motion.div
@@ -18,20 +19,8 @@ export default function HomeBanner() {
               viewport={{ once: true }}
               transition={{ staggerChildren: 3, duration: 3, type: 'spring' }}
               aria-hidden
-              className="max-w-[570px] text-white mx-4 lg:mx-72 font-rubik my-24">
-              <div className="flex w-fit items-center">
-                  <div className="w-1 h-6 bg-banner-small-head"></div>
-                  <motion.h2
-                      initial={{ width: 0, }}
-                      animate={{ width:'100%' }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 3, type: 'spring' }} 
-                      className="py-1 px-2 overflow-hidden bg-[hsla(210,42%,18%,0.5)] text-nowrap text-xs md:text-sm leading-none"
-                      aria-label="Small Heading">
-                      Logistics & Supply Chain Solutions
-                  </motion.h2>
-              </div>
-
+              className="max-w-[570px] text-white font-rubik my-24 mx-4 md:mx-7 lg:mx-24">
+              <LableHeading text="Logistics & Supply Chain Solutions" styles="text-white bg-[rgba(26,45,64,0.50)]" />
               <h1 className="mt-2 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-normal" aria-label="Main Heading">
                   Your Gateway
                   to any Destination in the World

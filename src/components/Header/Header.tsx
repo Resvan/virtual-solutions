@@ -18,8 +18,8 @@ export default function Header() {
     ]
 
     return (
-        <header className="relative">
-            <div className="bg-primary relative flex justify-between gap-6 items-center py-4 px-2 sm:px-4 md:py-5 lg:py-6 lg:px-10">
+        <header className="relative bg-[hsla(196,60%,22%,0.25)]">
+            <div className="relative flex justify-between gap-6 items-center py-4 px-2 sm:px-4 md:py-5 lg:py-6 lg:px-10">
                 <div className="flex gap-2 md:gap-3 lg:gap-4 items-center">
                     <div className="h-10 w-10 md:h-14 md:w-14 ">
                         <Link href='/'>
@@ -66,7 +66,7 @@ export default function Header() {
                 </div>
                 <HamburgerMenu navLinks={navLinks} />
             </div>
-            <nav className="hidden lg:flex justify-center gap-8 py-5 bg-[hsla(196,60%,22%,0.25)] absolute w-full top-full left-0 z-[1]">
+            <nav className="hidden lg:flex justify-center gap-8 py-5 absolute w-full top-full left-0 z-[1]">
                 {navLinks.map((link) => (
                     <Link
                         key={link.url}
