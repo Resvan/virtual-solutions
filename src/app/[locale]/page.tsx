@@ -1,7 +1,8 @@
 import HomeBanner from "@/components/Banners/HomeBanner";
+import CompanyStats from "@/components/CompanyStats/CompanyStats";
 import HomeServices from "@/components/Services/HomeServices";
+import WhyUs from "@/components/whyUs/WhyUs";
 import { unstable_setRequestLocale } from "next-intl/server";
-import Image from "next/image";
 
 export default function Home({ params: { locale }, }: Readonly<{ params: { locale: string } }>) {
   unstable_setRequestLocale(locale);
@@ -9,6 +10,8 @@ export default function Home({ params: { locale }, }: Readonly<{ params: { local
     <main>
       <HomeBanner />
       <HomeServices />
+      <WhyUs />
+      <CompanyStats />
     </main>
   );
 }

@@ -71,7 +71,7 @@ export default function Header() {
                     <Link
                         key={link.url}
                         href={link.url}
-                        className="text-white font-kurb text-sm font-medium hover:underline"
+                        className="text-white font-kurb text-lg font-semibold hover:text-secondary"
                     >
                         {link.text}
                     </Link>

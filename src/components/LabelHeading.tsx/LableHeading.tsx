@@ -1,4 +1,5 @@
 
+'use client'
 import { motion } from 'framer-motion';
 
 export default function LableHeading({text, styles}: {text: string, styles: string}) {
@@ -6,7 +7,7 @@ export default function LableHeading({text, styles}: {text: string, styles: stri
       <div className="flex w-fit items-center">
           <div className="w-1 h-6 bg-banner-small-head"></div>
           <motion.h2
-              initial={{ width: 0, }}
+              initial={{ width: '0%', }}
               animate={{ width: '100%' }}
               viewport={{ once: true }}
               transition={{ duration: 3, type: 'spring' }}

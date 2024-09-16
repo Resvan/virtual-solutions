@@ -43,7 +43,7 @@ export default function HomeServices() {
     ]
   return (
       <section className="py-24 px-4 md:px-7 lg:px-24 bg-white">
-          <div className="grid grid-cols-1 md:grid-cols-3 max-w-[1200px] gap-10 mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 xl:container gap-10 mx-auto">
               <div>
                   <motion.div
                       whileInView={{

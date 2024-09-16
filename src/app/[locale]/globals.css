@@ -37,3 +37,23 @@ body {
   transition: width 0.4s, height 0.4s;
 }
 
+.half-image-half-color {
+  width: 100%;
+  /* Adjust height as needed */
+
+  background:
+    linear-gradient(to top, white 50%, transparent 50%),
+    url('/images/whyusbg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.half-bg-gradient {
+  background: linear-gradient(0deg, #17495B -11.11%, rgba(23, 73, 91, 0.00) 90.28%);
+}
+
+.stats-box-bg {
+  background: linear-gradient(94deg, #F8A71B -1.21%, #FBC65D 58.66%, #FCE2A0 116.84%);
+  width: 17px;
+  height: 17px;
+}
