@@ -3,9 +3,9 @@ import AnimatedNumber from '../AnimatedNumber/AnimatedNumber'
 
 export default function CompanyStats() {
   return (
-      <section className='max-w-[1020px] mx-auto border-t border-b border-[#D4D4D4]'>
-          <div className='grid grid-cols-2 gap-20'>
-              <div className='border-r border-[#D4D4D4] py-8'>
+      <section className='max-w-[1020px] mx-auto py-5 md:py-0 border-t border-b border-[#D4D4D4]'>
+          <div className='grid md:grid-cols-2 gap-4 md:gap-20'>
+              <div className='border-r border-[#D4D4D4] md:py-8'>
                   <div className='flex gap-4 items-center w-fit mx-auto'>
                       <AnimatedNumber
                           value={1294}
@@ -17,7 +17,7 @@ export default function CompanyStats() {
                       </p>
                   </div>
               </div>
-              <div className='py-8'>
+              <div className='md:py-8'>
                   <div className='flex gap-4 items-center w-fit mx-auto'>
                       <AnimatedNumber
                           value={3594}
