@@ -1,4 +1,5 @@
 import React from 'react'
+import AnimatedNumber from '../AnimatedNumber/AnimatedNumber'
 
 export default function CompanyStats() {
   return (
@@ -6,7 +7,10 @@ export default function CompanyStats() {
           <div className='grid grid-cols-2 gap-20'>
               <div className='border-r border-[#D4D4D4] py-8'>
                   <div className='flex gap-4 items-center w-fit mx-auto'>
-                      <h4 className='text-dark-blue font-rubik text-5xl font-semibold leading-normal'>1294</h4>
+                      <AnimatedNumber
+                          value={1294}
+                          styles='text-dark-blue font-rubik text-5xl font-semibold leading-normal'
+                      />
                       <div className='stats-box-bg'></div>
                       <p className='text-dark-blue font-rubik text-xl/normal font-normal'>
                           Delivered Packages
@@ -15,7 +19,10 @@ export default function CompanyStats() {
               </div>
               <div className='py-8'>
                   <div className='flex gap-4 items-center w-fit mx-auto'>
-                      <h4 className='text-dark-blue font-rubik text-5xl font-semibold leading-normal'>3594</h4>
+                      <AnimatedNumber
+                          value={3594}
+                          styles='text-dark-blue font-rubik text-5xl font-semibold leading-normal'
+                      />
                       <div className='stats-box-bg'></div>
                       <p className='text-dark-blue font-rubik text-xl/normal font-normal'>
                           Satisfied Clients
