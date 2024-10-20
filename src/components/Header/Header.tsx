@@ -1,11 +1,17 @@
+'use client'
 import { Link, Locale } from "@/i18n/i18n.config";
 import { useLocale, useTranslations } from "next-intl";
 import LocaleSwitcher from "../LocaleSwitcher/LocaleSwitcher";
 import Image from "next/image";
 import HamburgerMenu from "../HamburgerMenu";
+import { usePathname } from "next/navigation";
 
 
 export default function Header() {
+    const pathName = usePathname();
+    console.log(pathName);
+    
+    
 
     const t = useTranslations("Header");
     const locale = useLocale() as Locale;
@@ -18,7 +24,7 @@ export default function Header() {
     ]
 
     return (
-        <header className="relative bg-[hsla(196,60%,22%,0.25)]">
+        <header className={`relative ${pathName === '/' ? 'bg-[hsla(196,60%,22%,0.25)]' : 'bg-primary'} `}>
             <div className="relative flex justify-between gap-6 items-center py-4 px-2 sm:px-4 md:py-5 lg:py-6 lg:px-10">
                 <div className="flex gap-2 md:gap-3 lg:gap-4 items-center">
                     <div className="h-10 w-10 md:h-14 md:w-14 ">
@@ -66,7 +72,7 @@ export default function Header() {
                 </div>
                 <HamburgerMenu navLinks={navLinks} />
             </div>
-            <nav className="hidden lg:flex justify-center gap-8 py-5 absolute w-full top-full left-0 z-[1]">
+            <nav className={`hidden lg:flex justify-center gap-8 py-5 absolute w-full top-full left-0 z-[1] ${pathName !== '/' ? 'bg-[hsla(196,60%,22%,0.25)]': ''}`}>
                 {navLinks.map((link) => (
                     <Link
                         key={link.url}
