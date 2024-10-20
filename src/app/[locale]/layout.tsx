@@ -6,6 +6,7 @@ import { krub, rubik } from "@/fonts/font";
 import Header from "@/components/Header/Header";
 import useTextDirection from "@/hooks/useTextDirection";
 import NextIntlClientWrapper from "@/components/NextIntlClientWrapper/NextIntlClientWrapper";
+import Footer from "@/components/Footer";
 
 
 export function generateStaticParams() {
@@ -90,6 +91,7 @@ export default  function RootLayout({
         <NextIntlClientWrapper>
           <Header />
           {children}
+          <Footer />
         </NextIntlClientWrapper>
       </body>
     </html>
