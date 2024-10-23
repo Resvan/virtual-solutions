@@ -123,20 +123,43 @@ export default function page() {
                             viewport={{ once: true }}
                             transition={{ staggerChildren: 3, duration: 3, type: 'spring' }}
                             aria-hidden
-                            className="absolute -bottom-[12%] right-0 md:-left-[25%] p-1 md:p-4 bg-white"
+                            className="absolute -bottom-[12%] right-0 md:-left-[15%] p-1 md:p-4 bg-white w-fit"
                         >
                             <Image
                                 src="/images/about-img-two.png"
                                 alt="Flight"
                                 width={200}
                                 height={100}
-                                className="object-cover h-28 w-auto max-w-full"
+                                className="object-cover h-28 md:h-36 w-auto max-w-full"
                             />
                         </motion.div>
                     </div>
                 </div>
 
             </section>
+            <div className="bg-gray-100 py-16">
+                <div className="xl:container mx-auto px-6 md:px-12 lg:px-24 text-center">
+                    <h2 className="text-4xl font-semibold text-gray-800">Our Mission & Vision</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-10">
+                        {/* Our Mission */}
+                        <div className="bg-white p-8 rounded-lg shadow-md">
+                            <h3 className="text-2xl font-bold text-primary">Our Mission</h3>
+                            <p className="mt-4 text-gray-600 leading-relaxed">
+                                To deliver high-quality solutions that create value and reliable competitive advantage for our clients around the world.
+                            </p>
+                        </div>
+
+                        {/* Our Vision */}
+                        <div className="bg-white p-8 rounded-lg shadow-md">
+                            <h3 className="text-2xl font-bold text-primary">Our Vision</h3>
+                            <p className="mt-4 text-gray-600 leading-relaxed">
+                                To be a global leader in providing innovative solutions and services that enable companies to reach their full potential.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <section className="py-16 px-4 md:px-7 lg:px-24 bg-white flex flex-col items-center">
                 <div className='pb-16'>
                     <motion.div
