@@ -212,7 +212,7 @@ export default function page() {
                     </motion.div>
                 </div>
 
-                <div className='grid gap-8 grid-cols-2 sm:grid-cols-3 md:grid-cols-4'>
+                <div className='grid gap-8 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 class'>
                     {services.map((service, index) => (
                         <motion.div
                             key={index}
