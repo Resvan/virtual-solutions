@@ -44,6 +44,7 @@ export default function page() {
     ]
     return (
         <>
+            {/* Hero Section */}
             <section
                 style={{
                     backgroundImage: "url('/images/about-bg.png')",
@@ -54,10 +55,7 @@ export default function page() {
                 }}
                 className="relative py-10 md:py-24 px-4 md:px-7 lg:px-24"
             >
-                {/* Ensure the overlay has a lower z-index */}
                 <div className="absolute top-0 left-0 bg-about-banner w-full h-full inset-0 z-0"></div>
-
-                {/* Text with a higher z-index */}
                 <motion.div
                     initial={{ opacity: 0, x: -50 }}
                     animate={{ opacity: 1, x: 0 }}
@@ -71,17 +69,15 @@ export default function page() {
                     </h1>
                 </motion.div>
             </section>
-               <section className="mb-10 px-4 md:px-7 lg:px-24 relative">
+
+            {/* Company Overview */}
+            <section className="mb-10 px-4 md:px-7 lg:px-24 relative">
                 <div className="bg-white mt-6 grid gap-8 md:gap-10 lg:gap-20 grid-cols-1 md:grid-cols-2  md:p-20 xl:container mx-auto z-10 relative">
                     <motion.div
-                        whileInView={{
-                            opacity: [0, 1],
-                            x: [50, 0],
-                        }}
+                        whileInView={{ opacity: [0, 1], x: [50, 0] }}
                         viewport={{ once: true }}
                         transition={{ staggerChildren: 3, duration: 3, type: 'spring' }}
                         aria-hidden
-                        className=""
                     >
                         <LableHeading text="About Us" styles="text-dark-blue font-rubik bg-[rgba(232,232,232,0.50)]" />
                         <h2 className="mt-4 font-rubik text-4xl font-semibold leading-none">
@@ -96,16 +92,13 @@ export default function page() {
                             buttonCss="mt-7 py-4 px-10 w-fit font-kurb text-base font-medium text-white bg-primary before:bg-secondary hover:before:w-[200px] hover:text-primary hover:before:h-[200px]"
                         />
                     </motion.div>
+
                     <div className="relative">
                         <motion.div
-                            whileInView={{
-                                opacity: [0, 1],
-                                x: [-50, 0],
-                            }}
+                            whileInView={{ opacity: [0, 1], x: [-50, 0] }}
                             viewport={{ once: true }}
                             transition={{ staggerChildren: 3, duration: 3, type: 'spring' }}
                             aria-hidden
-                            className=""
                         >
                             <Image
                                 src="/images/about-img-one.png"
@@ -115,11 +108,9 @@ export default function page() {
                                 className="object-cover h-auto w-auto max-w-full"
                             />
                         </motion.div>
+
                         <motion.div
-                            whileInView={{
-                                opacity: [0, 1],
-                                x: [-50, 0],
-                            }}
+                            whileInView={{ opacity: [0, 1], x: [-50, 0] }}
                             viewport={{ once: true }}
                             transition={{ staggerChildren: 3, duration: 3, type: 'spring' }}
                             aria-hidden
@@ -135,81 +126,107 @@ export default function page() {
                         </motion.div>
                     </div>
                 </div>
-
             </section>
-            <div className="bg-gray-100 py-16">
-                <div className="xl:container mx-auto px-6 md:px-12 lg:px-24 text-center">
-                    <h2 className="text-4xl font-semibold text-gray-800">Our Mission & Vision</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-10">
-                        {/* Our Mission */}
-                        <div className="bg-white p-8 rounded-lg shadow-md">
-                            <h3 className="text-2xl font-bold text-primary">Our Mission</h3>
-                            <p className="mt-4 text-gray-600 leading-relaxed">
-                                To deliver high-quality solutions that create value and reliable competitive advantage for our clients around the world.
-                            </p>
-                        </div>
 
-                        {/* Our Vision */}
-                        <div className="bg-white p-8 rounded-lg shadow-md">
-                            <h3 className="text-2xl font-bold text-primary">Our Vision</h3>
-                            <p className="mt-4 text-gray-600 leading-relaxed">
-                                To be a global leader in providing innovative solutions and services that enable companies to reach their full potential.
-                            </p>
-                        </div>
-                    </div>
+            {/* Mission & Vision Section with Animations */}
+            <div className="xl:container mx-auto px-6 md:px-12 lg:px-24">
+                <h2 className="text-center text-4xl font-semibold text-gray-800 mb-12">Our Mission & Vision</h2>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-16">
+                    {/* Mission Section */}
+                    <motion.div
+                        whileInView={{ opacity: [0, 1], x: [-50, 0] }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 2, type: 'spring' }}
+                        aria-hidden
+                        className="md:order-1"
+                    >
+                        <Image
+                            src="/images/mission.png"
+                            alt="Mission Image"
+                            width={500}
+                            height={350}
+                            className="object-cover w-full h-auto"
+                        />
+                    </motion.div>
+                    <motion.div
+                        whileInView={{ opacity: [0, 1], x: [50, 0] }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 2, type: 'spring' }}
+                        aria-hidden
+                        className="md:order-2 text-center md:text-left"
+                    >
+                        <h3 className="text-3xl font-bold text-primary mb-4">Our Mission</h3>
+                        <p className="text-gray-600 text-base leading-relaxed">
+                            To deliver high-quality solutions that create value and reliable competitive advantage for our clients around the world. We focus on leveraging cutting-edge technologies and fostering innovation to provide impactful results.
+                        </p>
+                    </motion.div>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                    {/* Vision Section */}
+                    <motion.div
+                        whileInView={{ opacity: [0, 1], x: [50, 0] }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 2, type: 'spring' }}
+                        aria-hidden
+                        className="md:order-2"
+                    >
+                        <Image
+                            src="/images/vision.png"
+                            alt="Vision Image"
+                            width={500}
+                            height={350}
+                            className="object-cover w-full h-auto"
+                        />
+                    </motion.div>
+                    <motion.div
+                        whileInView={{ opacity: [0, 1], x: [-50, 0] }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 2, type: 'spring' }}
+                        aria-hidden
+                        className="md:order-1 text-center md:text-left"
+                    >
+                        <h3 className="text-3xl font-bold text-primary mb-4">Our Vision</h3>
+                        <p className="text-gray-600 text-base leading-relaxed">
+                            To be a global leader in providing innovative solutions and services that empower companies to achieve their goals. We strive to make a lasting impact by fostering a culture of growth, integrity, and sustainability.
+                        </p>
+                    </motion.div>
                 </div>
             </div>
 
+            {/* Logistics Services Section */}
             <section className="py-16 px-4 md:px-7 lg:px-24 bg-white flex flex-col items-center">
                 <div className='pb-16'>
                     <motion.div
-                        whileInView={{
-                            opacity: [0, 1],
-                            x: [-50, 0]
-                        }}
+                        whileInView={{ opacity: [0, 1], x: [-50, 0] }}
                         viewport={{ once: true }}
                         transition={{ staggerChildren: 3, duration: 3, type: 'spring' }}
                         aria-hidden
-                        className="text-dark-blue font-rubik">
+                        className="text-dark-blue font-rubik"
+                    >
                         <LableHeading text="What We Do" styles='text-dark-blue bg-[rgba(232,232,232,0.50)]' />
                         <h2 className='mt-4 font-rubik text-4xl font-semibold leading-none'>
                             Our Logistics Services
                         </h2>
                     </motion.div>
                 </div>
-                <div className='grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3'>
-                    {
-                        services.map((item, idx) => (
-                            <motion.div
-                                whileInView={{
-                                    opacity: [0, 1],
-                                    y: [100, 0]
-                                }}
-                                viewport={{ once: true }}
-                                transition={{ staggerChildren: 3, duration: 3, type: 'spring' }}
-                                aria-hidden key={idx} className='flex gap-7 items-start'>
-                                <Image
-                                    src={item.image}
-                                    alt={item.title}
-                                    width={52}
-                                    height={52}
-                                />
-                                <div className='border-l border-[#D8D8D8] pl-4'>
-                                    <h3 className='text-dark-blue font-rubik text-2xl/normal leading-normal'>
-                                        {item.title}
-                                    </h3>
-                                    <p className='mt-2 text-[#6F7B8E] font-kurb text-base font-medium leading-[150%]'>
-                                        {item.description}
-                                    </p>
-                                </div>
-                            </motion.div>
-                        ))
-                    }
+
+                <div className='grid gap-8 grid-cols-2 sm:grid-cols-3 md:grid-cols-4'>
+                    {services.map((service, index) => (
+                        <motion.div
+                            key={index}
+                            whileInView={{ opacity: [0, 1], y: [50, 0] }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 1, type: 'spring' }}
+                            aria-hidden
+                            className='flex flex-col items-center bg-[#F4F4F4] p-6 w-full rounded-xl'
+                        >
+                            <Image src={service.image} width={50} height={50} alt={service.title} />
+                            <p className='text-xl font-semibold text-dark-blue'>{service.title}</p>
+                        </motion.div>
+                    ))}
                 </div>
-                <RippleButton
-                    component="link"
-                    buttonText="More Work"
-                    buttonCss="mt-10 py-4 px-10 w-fit font-kurb text-base font-medium text-white bg-primary before:bg-secondary hover:before:w-[200px] hover:text-primary hover:before:h-[200px]" />
             </section>
         </>
 
