@@ -52,7 +52,7 @@ export default function page() {
                     backgroundRepeat: "no-repeat",
                     width: "100%",
                 }}
-                className="relative py-10 mt-10 md:mt-0 md:py-24 px-4 md:px-7 lg:px-24"
+                className="relative py-10 md:py-24 px-4 md:px-7 lg:px-24"
             >
                 {/* Ensure the overlay has a lower z-index */}
                 <div className="absolute top-0 left-0 bg-about-banner w-full h-full inset-0 z-0"></div>
@@ -72,63 +72,70 @@ export default function page() {
                 </motion.div>
             </section>
                <section className="mb-10 px-4 md:px-7 lg:px-24 relative">
-                <div className="bg-white mt-6 grid gap-8 md:gap-10 lg:gap-20 grid-cols-1 md:grid-cols-2 p-10 md:p-20 xl:container mx-auto z-10 relative">
-                    <div className="relative">
-                        <motion.div
-                            whileInView={{
-                                opacity: [0, 1],
-                                x: [-50, 0]
-                            }}
-                            viewport={{ once: true }}
-                            transition={{ staggerChildren: 3, duration: 3, type: 'spring' }}
-                            aria-hidden className="">
-                            <Image
-                                src={'/images/about-img-one.png'}
-                                alt="Flight"
-                                width={461}
-                                height={415}
-                                className="object-cover"
-                            />
-                        </motion.div>
-                        <motion.div
-                            whileInView={{
-                                opacity: [0, 1],
-                                x: [-50, 0]
-                            }}
-                            viewport={{ once: true }}
-                            transition={{ staggerChildren: 3, duration: 3, type: 'spring' }}
-                            aria-hidden className="absolute -bottom-[12%] -left-10 md:-left-[25%] p-4 bg-white">
-                            <Image
-                                src={'/images/about-img-two.png'}
-                                alt="Flight"
-                                width={200}
-                                height={100}
-                                className="object-cover"
-                            />
-                        </motion.div>
-                    </div>
+                <div className="bg-white mt-6 grid gap-8 md:gap-10 lg:gap-20 grid-cols-1 md:grid-cols-2  md:p-20 xl:container mx-auto z-10 relative">
                     <motion.div
                         whileInView={{
                             opacity: [0, 1],
-                            x: [50, 0]
+                            x: [50, 0],
                         }}
                         viewport={{ once: true }}
                         transition={{ staggerChildren: 3, duration: 3, type: 'spring' }}
-                        aria-hidden className="">
-                        <LableHeading text="About Us" styles='text-dark-blue font-rubik bg-[rgba(232,232,232,0.50)]' />
-                        <h2 className='mt-4 font-rubik text-4xl font-semibold leading-none'>
+                        aria-hidden
+                        className=""
+                    >
+                        <LableHeading text="About Us" styles="text-dark-blue font-rubik bg-[rgba(232,232,232,0.50)]" />
+                        <h2 className="mt-4 font-rubik text-4xl font-semibold leading-none">
                             Our Company Overview
                         </h2>
-                        <p className='mt-2 text-[#6F7B8E] font-kurb text-base font-medium leading-[150%]'>
-                            Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value proposition.
-                            Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+                        <p className="mt-2 text-[#6F7B8E] font-kurb text-base font-medium leading-[150%]">
+                            Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
                         </p>
                         <RippleButton
                             component="link"
                             buttonText="Contact Us"
-                            buttonCss="mt-7 py-4 px-10 w-fit font-kurb text-base font-medium text-white bg-primary before:bg-secondary hover:before:w-[200px] hover:text-primary hover:before:h-[200px]" />
+                            buttonCss="mt-7 py-4 px-10 w-fit font-kurb text-base font-medium text-white bg-primary before:bg-secondary hover:before:w-[200px] hover:text-primary hover:before:h-[200px]"
+                        />
                     </motion.div>
+                    <div className="relative">
+                        <motion.div
+                            whileInView={{
+                                opacity: [0, 1],
+                                x: [-50, 0],
+                            }}
+                            viewport={{ once: true }}
+                            transition={{ staggerChildren: 3, duration: 3, type: 'spring' }}
+                            aria-hidden
+                            className=""
+                        >
+                            <Image
+                                src="/images/about-img-one.png"
+                                alt="Flight"
+                                width={461}
+                                height={415}
+                                className="object-cover h-auto w-auto max-w-full"
+                            />
+                        </motion.div>
+                        <motion.div
+                            whileInView={{
+                                opacity: [0, 1],
+                                x: [-50, 0],
+                            }}
+                            viewport={{ once: true }}
+                            transition={{ staggerChildren: 3, duration: 3, type: 'spring' }}
+                            aria-hidden
+                            className="absolute -bottom-[12%] right-0 md:-left-[25%] p-1 md:p-4 bg-white"
+                        >
+                            <Image
+                                src="/images/about-img-two.png"
+                                alt="Flight"
+                                width={200}
+                                height={100}
+                                className="object-cover h-28 w-auto max-w-full"
+                            />
+                        </motion.div>
+                    </div>
                 </div>
+
             </section>
             <section className="py-16 px-4 md:px-7 lg:px-24 bg-white flex flex-col items-center">
                 <div className='pb-16'>
