@@ -142,7 +142,7 @@ export default function page() {
                         className="md:order-1"
                     >
                         <Image
-                            src="/images/mission.png"
+                            src="/images/Mission.png"
                             alt="Mission Image"
                             width={500}
                             height={350}
@@ -173,7 +173,7 @@ export default function page() {
                         className="md:order-2"
                     >
                         <Image
-                            src="/images/vision.png"
+                            src="/images/Vision.png"
                             alt="Vision Image"
                             width={500}
                             height={350}
