@@ -42,13 +42,13 @@ const WhatWeDo = () => {
     ];
 
     return (
-        <section className="py-14 flex-col flex justify-center items-center mx-auto">
+        <section className="py-14 px-4 md:px-8 flex-col flex justify-center mx-auto ">
             <div className="flex flex-col md:items-center md:justify-center px-4 md:px-0">
                 <LableHeading text="What We Do" styles="bg-[rgba(232, 232, 232, 0.50)]" />
                 <p className="text-[#1C1F35] pt-4 md:pl-0 font-rubik text-4xl font-semibold leading-none">Our Logistics Services</p>
             </div>
 
-            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-32 gap-y-10 md:px-40 mt-16 '>
+            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-10 mt-16'>
                 {
                     services.map((item, idx) => (
                         <motion.div
