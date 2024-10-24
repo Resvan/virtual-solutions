@@ -91,10 +91,10 @@ export const OurWork = () => {
                                     height={52}
                                 />
                                 <div className='flex flex-col md:block md:mt-6'>
-                                    <h3 className='text-dark-blue font-rubik text-2xl/normal'>
+                                    <h3 className='text-dark-blue font-rubik text-2xl/normal leading-normal'>
                                         {item.title}
                                     </h3>
-                                    <p className='mt-2 text-[#6F7B8E] font-kurb text-base font-medium'>
+                                    <p className='mt-2 text-[#6F7B8E] font-kurb text-base font-medium leading-[150%]'>
                                         {item.description}
                                     </p>
                                 </div>
