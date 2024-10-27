@@ -1,6 +1,6 @@
 'use client'
 import Image from "next/image";
-import LableHeading from "../LabelHeading.tsx/LableHeading";
+import LableHeading from "../LabelHeading/LableHeading";
 import { motion } from 'framer-motion'
 
 export default function index() {

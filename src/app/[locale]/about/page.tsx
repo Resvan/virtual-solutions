@@ -1,5 +1,7 @@
 'use client';
-import LableHeading from '@/components/LabelHeading.tsx/LableHeading';
+import AnimatedNumber from '@/components/AnimatedNumber/AnimatedNumber';
+import CompanyStats from '@/components/CompanyStats/CompanyStats';
+import LableHeading from '@/components/LabelHeading/LableHeading';
 import RippleButton from '@/components/RippleButton';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
@@ -146,7 +148,7 @@ export default function page() {
                             alt="Mission Image"
                             width={500}
                             height={350}
-                            className="object-cover w-full h-auto"
+                            className="object-cover object-center max-h-[200px] w-auto max-w-full h-auto mx-auto"
                         />
                     </motion.div>
                     <motion.div
@@ -177,7 +179,7 @@ export default function page() {
                             alt="Vision Image"
                             width={500}
                             height={350}
-                            className="object-cover w-full h-auto"
+                            className="object-cover object-center max-h-[240px] w-auto max-w-full h-auto mx-auto"
                         />
                     </motion.div>
                     <motion.div
@@ -220,7 +222,7 @@ export default function page() {
                             viewport={{ once: true }}
                             transition={{ duration: 1, type: 'spring' }}
                             aria-hidden
-                            className='flex flex-col items-center bg-[#F4F4F4] p-6 w-full rounded-xl'
+                            className='flex flex-col justify-between items-center gap-3 bg-[#F4F4F4] p-6 w-full rounded-xl'
                         >
                             <Image src={service.image} width={50} height={50} alt={service.title} />
                             <p className='text-xl font-semibold text-dark-blue'>{service.title}</p>
@@ -228,6 +230,7 @@ export default function page() {
                     ))}
                 </div>
             </section>
+            <CompanyStats />
         </>
 
     );

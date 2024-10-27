@@ -8,10 +8,7 @@ import { usePathname } from "next/navigation";
 
 
 export default function Header() {
-    const pathName = usePathname();
-    console.log(pathName);
-    
-    
+    const pathName = usePathname();    
 
     const t = useTranslations("Header");
     const locale = useLocale() as Locale;

@@ -2,7 +2,7 @@
 import Image from "next/image";
 import RippleButton from "../RippleButton";
 import { motion } from 'framer-motion';
-import LableHeading from "../LabelHeading.tsx/LableHeading";
+import LableHeading from "../LabelHeading/LableHeading";
 
 
 export default function HomeBanner() {
