@@ -3,8 +3,10 @@
 import React from 'react'
 import RippleButton from '../RippleButton'
 import Image from 'next/image'
-import LableHeading from '../LabelHeading.tsx/LableHeading'
-import { motion } from 'framer-motion'
+import LableHeading from '../LabelHeading/LableHeading'
+import MotionContainer from '../MotionContainer/MotionContainer'
+import MotionItem from '../MotionItem/MotionItem'
+import Link from 'next/link'
 
 const WhatWeDo = () => {
 
@@ -12,32 +14,38 @@ const WhatWeDo = () => {
         {
             title: 'Sea Transport',
             description: 'Following the quality of our service thus having gained trust of our many clients.',
-            image: '/icons/ship-icon.svg'
+            image: '/icons/ship-icon.svg',
+            url: '/services/sea-transport' // Added URL
         },
         {
             title: 'Warehousing',
             description: 'Following the quality of our service thus having gained trust of our many clients.',
-            image: '/icons/ware-house-icon.svg'
+            image: '/icons/ware-house-icon.svg',
+            url: '/services/warehousing' // Added URL
         },
         {
             title: 'Air Fright',
             description: 'Following the quality of our service thus having gained trust of our many clients.',
-            image: '/icons/Flight-icon.svg'
+            image: '/icons/Flight-icon.svg',
+            url: '/services/air-freight' // Added URL
         },
         {
             title: 'Local Shipping',
             description: 'Following the quality of our service thus having gained trust of our many clients.',
-            image: '/icons/viechile-icon.svg'
+            image: '/icons/viechile-icon.svg',
+            url: '/services/local-shipping' // Added URL
         },
         {
             title: 'DHL Courier',
             description: 'Following the quality of our service thus having gained trust of our many clients.',
-            image: '/icons/dhl-icon.svg'
+            image: '/icons/dhl-icon.svg',
+            url: '/services/dhl-courier' // Added URL
         },
         {
             title: 'Packing',
             description: 'Following the quality of our service thus having gained trust of our many clients.',
-            image: '/icons/packing-icon.svg'
+            image: '/icons/packing-icon.svg',
+            url: '/services/packing' // Added URL
         }
     ];
 
@@ -48,18 +56,13 @@ const WhatWeDo = () => {
                 <p className="text-[#1C1F35] pt-4 md:pl-0 font-rubik text-4xl font-semibold leading-none">Our Logistics Services</p>
             </div>
 
-            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-10 mt-16'>
+            {/* Using MotionContainer for the Grid of Services */}
+            <MotionContainer classNames='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-10 mt-16'>
                 {
                     services.map((item, idx) => (
-                        <motion.div
-                            whileInView={{
-                                opacity: [0, 1],
-                                y: [100, 0]
-                            }}
-                            viewport={{ once: true }}
-                            transition={{ staggerChildren: 3, duration: 3, type: 'spring' }}
-                            aria-hidden key={idx} className='flex gap-7 items-start'>
-                            <div className="flex flex-col justify-center px-5 md:justify-start">
+                        // Using MotionItem for Each Service
+                        <MotionItem key={idx} classNames='flex gap-7 items-start hover:bg-white hover:shadow-xl cursor-pointer p-5 hover:rounded-2xl transition-all ease-out duration-200'>
+                            <Link href={item.url} className="flex flex-col justify-center px-5 md:justify-start">
                                 <Image
                                     src={item.image}
                                     alt={item.title}
@@ -72,11 +75,12 @@ const WhatWeDo = () => {
                                 <p className='mt-2 text-[#6F7B8E] font-kurb text-base font-medium leading-[150%]'>
                                     {item.description}
                                 </p>
-                            </div>
-                        </motion.div>
+                            </Link>
+                        </MotionItem>
                     ))
                 }
-            </div>
+            </MotionContainer>
+
             <RippleButton
                 component="link"
                 buttonText="More Work"
@@ -85,4 +89,4 @@ const WhatWeDo = () => {
     )
 }
 
-export default WhatWeDo
+export default WhatWeDo;

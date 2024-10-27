@@ -1,7 +1,7 @@
 'use client'
 import { motion } from 'framer-motion';
 import Image from "next/image";
-import LableHeading from "../LabelHeading.tsx/LableHeading";
+import LableHeading from "../LabelHeading/LableHeading";
 
 export default function WhyUs() {
     return (

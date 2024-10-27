@@ -1,6 +1,6 @@
 'use client';
 import CompanyStats from "@/components/CompanyStats/CompanyStats";
-import LableHeading from "@/components/LabelHeading.tsx/LableHeading";
+import LableHeading from "@/components/LabelHeading/LableHeading";
 import { OurWork } from "@/components/OurWork/OurWork";
 import Testimonial from "@/components/Testimonial";
 import WhatWeDo from "@/components/WhatWeDo/WhatWeDo";

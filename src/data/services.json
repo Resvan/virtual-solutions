@@ -1,0 +1,286 @@
+{
+    "services": [
+        {
+            "title": "Sea Transport",
+            "url": "sea-transport",
+            "icon": "/icons/ship-icon.svg",
+            "heading": "Reliable and Cost-Effective Sea Transport Services",
+            "detailedDescription": "Our Sea Transport services are tailored to meet the needs of businesses and individuals seeking secure, cost-effective, and reliable ocean freight solutions. We offer both Full Container Load (FCL) and Less than Container Load (LCL) services, enabling you to choose the most economical options based on your shipment size and schedule requirements. Through strong partnerships with top shipping lines, we provide frequent and flexible sailing schedules, ensuring your cargo arrives on time and within budget. We handle all documentation, customs clearance, and cargo insurance, so you can focus on your core business while we manage the logistics.",
+            "benefits": [
+                {
+                    "icon": "✔️",
+                    "title": "Cost Savings",
+                    "description": "Lower per-unit cost for shipping high-volume goods."
+                },
+                {
+                    "icon": "🌍",
+                    "title": "Environmental Impact",
+                    "description": "Sea transport is an eco-friendly option for long-distance shipping."
+                },
+                {
+                    "icon": "🌐",
+                    "title": "Comprehensive Global Network",
+                    "description": "Access to a wide network of international ports for seamless global trade."
+                },
+                {
+                    "icon": "🔒",
+                    "title": "Enhanced Security",
+                    "description": "Secure containerized shipping to protect goods from damage and theft."
+                },
+                {
+                    "icon": "⚙️",
+                    "title": "Customized Solutions",
+                    "description": "Flexible scheduling and load options to meet diverse needs."
+                }
+            ],
+            "howItWorks": [
+                {
+                    "step": "Step 1",
+                    "title": "Consultation and Planning",
+                    "description": "We evaluate your requirements and suggest optimal solutions.",
+                    "icon": "📋"
+                },
+                {
+                    "step": "Step 2",
+                    "title": "Booking and Documentation",
+                    "description": "We arrange vessel space and manage all necessary shipping documents.",
+                    "icon": "📄"
+                },
+                {
+                    "step": "Step 3",
+                    "title": "Packing and Loading",
+                    "description": "Goods are securely packed and loaded into containers, ensuring maximum safety.",
+                    "icon": "📦"
+                },
+                {
+                    "step": "Step 4",
+                    "title": "Real-Time Monitoring",
+                    "description": "Our team provides live tracking and updates throughout the shipping journey.",
+                    "icon": "📡"
+                },
+                {
+                    "step": "Step 5",
+                    "title": "Customs Clearance and Delivery",
+                    "description": "Upon arrival, we handle customs clearance and deliver goods to the final destination.",
+                    "icon": "🚚"
+                }
+            ],
+            "images": {
+                "bannerImage": "/images/sea-transport/banner.png",
+                "mainImage": "/images/sea-transport/main.png",
+                "benefitSectionImage": "/images/sea-transport/benefits.jpg",
+                "howItWorksImage": "/images/sea-transport/how-it-works.jpg"
+            }
+        },
+        {
+            "title": "Warehousing",
+            "url": "warehousing",
+            "icon": "/icons/ship-icon.svg",
+            "heading": "Secure and Flexible Warehousing Solutions",
+            "detailedDescription": "Our warehousing solutions provide a safe, organized, and flexible space for your inventory, catering to businesses of all sizes. Equipped with modern technology, our warehouses offer real-time inventory tracking, climate-controlled options, and scalable storage solutions that grow with your needs. From daily storage to long-term solutions, we ensure your goods are handled with the highest standards of security, quality, and efficiency, supporting a smooth supply chain for your business. We also offer value-added services like packing, labeling, and repackaging to enhance your product's market readiness.",
+            "benefits": [
+                {
+                    "icon": "📈",
+                    "title": "Scalability",
+                    "description": "Easily adjust storage space based on demand and seasonal needs."
+                },
+                {
+                    "icon": "📦",
+                    "title": "Inventory Management",
+                    "description": "Digital tools for real-time inventory tracking, order picking, and status updates."
+                },
+                {
+                    "icon": "🔒",
+                    "title": "Enhanced Security",
+                    "description": "24/7 monitoring and controlled access for full inventory protection."
+                },
+                {
+                    "icon": "🌡️",
+                    "title": "Climate Control",
+                    "description": "Options for temperature-sensitive goods."
+                },
+                {
+                    "icon": "🛠️",
+                    "title": "Value-Added Services",
+                    "description": "Packaging, labeling, and product inspection."
+                }
+            ],
+            "howItWorks": [
+                {
+                    "step": "Step 1",
+                    "title": "Initial Assessment and Storage Allocation",
+                    "description": "We evaluate your storage needs and assign optimal space.",
+                    "icon": "📐"
+                },
+                {
+                    "step": "Step 2",
+                    "title": "Digital Inventory Setup",
+                    "description": "Products are scanned and recorded for real-time tracking and easy management.",
+                    "icon": "📲"
+                },
+                {
+                    "step": "Step 3",
+                    "title": "Ongoing Monitoring and Security",
+                    "description": "Regular checks and updates ensure goods are protected and organized.",
+                    "icon": "🔍"
+                },
+                {
+                    "step": "Step 4",
+                    "title": "Quick Retrieval and Dispatch",
+                    "description": "Efficient retrieval processes ensure timely shipping and distribution.",
+                    "icon": "🚛"
+                }
+            ],
+            "images": {
+                "bannerImage": "/images/warehousing/banner.jpg",
+                "mainImage": "/images/warehousing/main.jpg",
+                "benefitSectionImage": "/images/warehousing/benefits.jpg",
+                "howItWorksImage": "/images/warehousing/how-it-works.jpg"
+            }
+        },
+        {
+            "title": "Air Freight",
+            "url": "air-freight",
+            "icon": "/icons/ship-icon.svg",
+            "heading": "Expedited Air Freight Services for Time-Sensitive Cargo",
+            "detailedDescription": "Our Air Freight services prioritize speed, reliability, and safety, making them ideal for time-critical shipments. We offer flexible solutions for a range of cargo sizes, from small packages to oversized shipments. Through established partnerships with major airlines, we ensure priority access and fast transit times across multiple regions. Our services include customs brokerage, insurance options, and specialized handling for fragile and perishable goods, giving you peace of mind and assurance that your shipment is in expert hands.",
+            "benefits": [
+                {
+                    "icon": "🚀",
+                    "title": "Fastest Delivery Option",
+                    "description": "Expedited transit times for urgent shipments."
+                },
+                {
+                    "icon": "✈️",
+                    "title": "Priority Cargo Access",
+                    "description": "Partnerships with top airlines for faster service."
+                },
+                {
+                    "icon": "📍",
+                    "title": "Real-Time Tracking",
+                    "description": "24/7 tracking and live updates on your shipment’s status."
+                },
+                {
+                    "icon": "👐",
+                    "title": "Customized Handling",
+                    "description": "Specialized care for high-value and sensitive goods."
+                },
+                {
+                    "icon": "🔐",
+                    "title": "Insurance Coverage",
+                    "description": "Optional cargo insurance for added peace of mind."
+                }
+            ],
+            "howItWorks": [
+                {
+                    "step": "Step 1",
+                    "title": "Scheduling and Route Planning",
+                    "description": "We determine the best flight and route options based on your timeline.",
+                    "icon": "🗓️"
+                },
+                {
+                    "step": "Step 2",
+                    "title": "Cargo Preparation",
+                    "description": "Goods are securely packed, labeled, and documented for air travel.",
+                    "icon": "📦"
+                },
+                {
+                    "step": "Step 3",
+                    "title": "Airline Coordination",
+                    "description": "We coordinate directly with airlines to prioritize loading and transit.",
+                    "icon": "✈️"
+                },
+                {
+                    "step": "Step 4",
+                    "title": "Customs Clearance",
+                    "description": "Our team facilitates clearance processes for swift entry into the destination.",
+                    "icon": "🛃"
+                },
+                {
+                    "step": "Step 5",
+                    "title": "Final Delivery",
+                    "description": "On arrival, goods are either stored at the destination hub or delivered to the specified location.",
+                    "icon": "📍"
+                }
+            ],
+            "images": {
+                "bannerImage": "/images/air-freight/banner.jpg",
+                "mainImage": "/images/air-freight/main.jpg",
+                "benefitSectionImage": "/images/air-freight/benefits.jpg",
+                "howItWorksImage": "/images/air-freight/how-it-works.jpg"
+            }
+        },
+        {
+            "title": "Local Shipping",
+            "url": "local-shipping",
+            "icon": "/icons/ship-icon.svg",
+            "heading": "Reliable and Affordable Local Shipping Solutions",
+            "detailedDescription": "Our local shipping solutions are ideal for businesses looking to deliver goods within the same city or region efficiently. With a dedicated fleet of vehicles and experienced drivers, we offer reliable delivery options tailored to your needs. Whether it's a single package or bulk delivery, our team ensures your shipment reaches its destination on time and in perfect condition. Our services include flexible delivery schedules, real-time tracking, and customized solutions based on cargo type, weight, and size.",
+            "benefits": [
+                {
+                    "icon": "📅",
+                    "title": "Flexibility",
+                    "description": "Same-day delivery options for urgent shipments."
+                },
+                {
+                    "icon": "💸",
+                    "title": "Economical",
+                    "description": "Cost-effective local shipping rates."
+                },
+                {
+                    "icon": "🔒",
+                    "title": "Security",
+                    "description": "Safe handling and GPS tracking to monitor goods during transit."
+                },
+                {
+                    "icon": "🛠️",
+                    "title": "Custom Solutions",
+                    "description": "Tailored delivery options based on shipment needs."
+                },
+                {
+                    "icon": "⏱️",
+                    "title": "Timely Service",
+                    "description": "On-time deliveries with precise scheduling."
+                }
+            ],
+            "howItWorks": [
+                {
+                    "step": "Step 1",
+                    "title": "Client Request and Scheduling",
+                    "description": "We arrange delivery based on your preferred time and date.",
+                    "icon": "📅"
+                },
+                {
+                    "step": "Step 2",
+                    "title": "Vehicle Assignment",
+                    "description": "Suitable vehicles are assigned based on the load and distance.",
+                    "icon": "🚚"
+                },
+                {
+                    "step": "Step 3",
+                    "title": "Pickup and Transport",
+                    "description": "Goods are collected from the client and transported under careful supervision.",
+                    "icon": "🔄"
+                },
+                {
+                    "step": "Step 4",
+                    "title": "Real-Time Tracking",
+                    "description": "Track shipments online with regular updates.",
+                    "icon": "📡"
+                },
+                {
+                    "step": "Step 5",
+                    "title": "Delivery Confirmation",
+                    "description": "Recipient confirms delivery, closing the shipment process.",
+                    "icon": "✔️"
+                }
+            ],
+            "images": {
+                "bannerImage": "/images/local-shipping/banner.jpg",
+                "mainImage": "/images/local-shipping/main.jpg",
+                "benefitSectionImage": "/images/local-shipping/benefits.jpg",
+                "howItWorksImage": "/images/local-shipping/how-it-works.jpg"
+            }
+        }
+    ]
+}

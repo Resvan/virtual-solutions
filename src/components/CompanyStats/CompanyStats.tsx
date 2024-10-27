@@ -9,7 +9,7 @@ export default function CompanyStats() {
                   <div className='flex gap-4 items-center w-fit mx-auto'>
                       <AnimatedNumber
                           value={1294}
-                          styles='text-dark-blue font-rubik text-5xl font-semibold leading-normal'
+                          styles='text-dark-blue font-rubik text-xl md:text-5xl font-semibold leading-normal'
                       />
                       <div className='stats-box-bg'></div>
                       <p className='text-dark-blue font-rubik text-xl/normal font-normal'>
@@ -21,7 +21,7 @@ export default function CompanyStats() {
                   <div className='flex gap-4 items-center w-fit mx-auto'>
                       <AnimatedNumber
                           value={3594}
-                          styles='text-dark-blue font-rubik text-5xl font-semibold leading-normal'
+                          styles='text-dark-blue font-rubik text-xl md:text-5xl font-semibold leading-normal'
                       />
                       <div className='stats-box-bg'></div>
                       <p className='text-dark-blue font-rubik text-xl/normal font-normal'>

@@ -1,6 +1,6 @@
 'use client'
 import { motion } from 'framer-motion';
-import LableHeading from '../LabelHeading.tsx/LableHeading';
+import LableHeading from '../LabelHeading/LableHeading';
 import Image from 'next/image';
 import { Link } from '@/i18n/i18n.config';
 import { useTranslations } from 'next-intl';

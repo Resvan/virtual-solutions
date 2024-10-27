@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
-import LableHeading from '../LabelHeading.tsx/LableHeading';
+import LableHeading from '../LabelHeading/LableHeading';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { useScreenSize } from '@/utils/useScreenSize';
