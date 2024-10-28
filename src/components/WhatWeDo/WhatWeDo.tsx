@@ -15,37 +15,37 @@ const WhatWeDo = () => {
             title: 'Sea Transport',
             description: 'Following the quality of our service thus having gained trust of our many clients.',
             image: '/icons/ship-icon.svg',
-            url: '/services/sea-transport' // Added URL
+            url: '/services/sea-transport'
         },
         {
             title: 'Warehousing',
             description: 'Following the quality of our service thus having gained trust of our many clients.',
             image: '/icons/ware-house-icon.svg',
-            url: '/services/warehousing' // Added URL
+            url: '/services/warehousing'
         },
         {
             title: 'Air Fright',
             description: 'Following the quality of our service thus having gained trust of our many clients.',
             image: '/icons/Flight-icon.svg',
-            url: '/services/air-freight' // Added URL
+            url: '/services/air-freight'
         },
         {
             title: 'Local Shipping',
             description: 'Following the quality of our service thus having gained trust of our many clients.',
             image: '/icons/viechile-icon.svg',
-            url: '/services/local-shipping' // Added URL
+            url: '/services/local-shipping'
         },
         {
             title: 'DHL Courier',
             description: 'Following the quality of our service thus having gained trust of our many clients.',
             image: '/icons/dhl-icon.svg',
-            url: '/services/dhl-courier' // Added URL
+            url: '/services/dhl-courier'
         },
         {
             title: 'Packing',
             description: 'Following the quality of our service thus having gained trust of our many clients.',
             image: '/icons/packing-icon.svg',
-            url: '/services/packing' // Added URL
+            url: '/services/packing'
         }
     ];
 

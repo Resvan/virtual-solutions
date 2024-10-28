@@ -11,6 +11,9 @@ export default function page({ params }: { params: { locale: string; service: st
     
     const service = data.services.find((service) => service.url === url);
 
+    console.log(service);
+    
+
     if (!service) {
         notFound();
     }
@@ -43,7 +46,7 @@ export default function page({ params }: { params: { locale: string; service: st
               </motion.div>
           </section>
           <section className="mt-7 md:mt-14 px-4 md:px-7 lg:px-24">
-              <Image src={service.images.mainImage} width={1600} height={1100} alt={service.title} className="w-full h-auto object-cover object-center" />
+              <Image src={service.images.mainImage} width={1600} height={1100} alt={service.title} className="w-full h-auto max-h-[460px] object-cover object-center" />
               <div className="flex items-center gap-6 mt-5 md:mt-10 mb-2.5 md:mb-5">
                   <Image src={service.icon} alt="icon" width={56} height={56} />
                   <h1 className="text-dark-blue font-rubik text-xl md:text-4xl leading-normal font-semibold">
@@ -72,12 +75,12 @@ export default function page({ params }: { params: { locale: string; service: st
                       </ul>
                   </div>
                   <div className="my-auto">
-                      <Image src={service.images.benefitSectionImage} width={600} height={320} alt="Benefits Image" />
+                      <Image src={service.images.benefitSectionImage} width={600} height={320} alt="Benefits Image" className="w-full h-auto max-h-[560px]" />
                   </div>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-5 md:my-14">
                   <div className="my-auto">
-                      <Image src={service.images.howItWorksImage} width={600} height={320} alt="Benefits Image" />
+                      <Image src={service.images.howItWorksImage} width={600} height={320} alt="Benefits Image" className="w-full h-auto max-h-[560px]" />
                   </div>
                   <div className="">
                       <div className="mb-4">
