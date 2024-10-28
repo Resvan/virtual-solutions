@@ -75,7 +75,7 @@
         {
             "title": "Warehousing",
             "url": "warehousing",
-            "icon": "/icons/ship-icon.svg",
+            "icon": "/icons/ware-house-icon.svg",
             "heading": "Secure and Flexible Warehousing Solutions",
             "detailedDescription": "Our warehousing solutions provide a safe, organized, and flexible space for your inventory, catering to businesses of all sizes. Equipped with modern technology, our warehouses offer real-time inventory tracking, climate-controlled options, and scalable storage solutions that grow with your needs. From daily storage to long-term solutions, we ensure your goods are handled with the highest standards of security, quality, and efficiency, supporting a smooth supply chain for your business. We also offer value-added services like packing, labeling, and repackaging to enhance your product's market readiness.",
             "benefits": [
@@ -132,16 +132,16 @@
                 }
             ],
             "images": {
-                "bannerImage": "/images/warehousing/banner.jpg",
-                "mainImage": "/images/warehousing/main.jpg",
-                "benefitSectionImage": "/images/warehousing/benefits.jpg",
-                "howItWorksImage": "/images/warehousing/how-it-works.jpg"
+                "bannerImage": "/images/ware-houseing/banner.jpg",
+                "mainImage": "/images/ware-houseing/main.jfif",
+                "benefitSectionImage": "/images/ware-houseing/benefits.avif",
+                "howItWorksImage": "/images/ware-houseing/how-it-works.webp"
             }
         },
         {
             "title": "Air Freight",
             "url": "air-freight",
-            "icon": "/icons/ship-icon.svg",
+            "icon": "/icons/Flight-icon.svg",
             "heading": "Expedited Air Freight Services for Time-Sensitive Cargo",
             "detailedDescription": "Our Air Freight services prioritize speed, reliability, and safety, making them ideal for time-critical shipments. We offer flexible solutions for a range of cargo sizes, from small packages to oversized shipments. Through established partnerships with major airlines, we ensure priority access and fast transit times across multiple regions. Our services include customs brokerage, insurance options, and specialized handling for fragile and perishable goods, giving you peace of mind and assurance that your shipment is in expert hands.",
             "benefits": [
@@ -204,16 +204,16 @@
                 }
             ],
             "images": {
-                "bannerImage": "/images/air-freight/banner.jpg",
-                "mainImage": "/images/air-freight/main.jpg",
+                "bannerImage": "/images/about-bg.png",
+                "mainImage": "/images/air-freight/main.jfif",
                 "benefitSectionImage": "/images/air-freight/benefits.jpg",
-                "howItWorksImage": "/images/air-freight/how-it-works.jpg"
+                "howItWorksImage": "/images/air-freight/how-it-works.png"
             }
         },
         {
             "title": "Local Shipping",
             "url": "local-shipping",
-            "icon": "/icons/ship-icon.svg",
+            "icon": "/icons/viechile-icon.svg",
             "heading": "Reliable and Affordable Local Shipping Solutions",
             "detailedDescription": "Our local shipping solutions are ideal for businesses looking to deliver goods within the same city or region efficiently. With a dedicated fleet of vehicles and experienced drivers, we offer reliable delivery options tailored to your needs. Whether it's a single package or bulk delivery, our team ensures your shipment reaches its destination on time and in perfect condition. Our services include flexible delivery schedules, real-time tracking, and customized solutions based on cargo type, weight, and size.",
             "benefits": [
@@ -276,10 +276,10 @@
                 }
             ],
             "images": {
-                "bannerImage": "/images/local-shipping/banner.jpg",
-                "mainImage": "/images/local-shipping/main.jpg",
+                "bannerImage": "/images/local-shipping/banner.png",
+                "mainImage": "/images/local-shipping/main.png",
                 "benefitSectionImage": "/images/local-shipping/benefits.jpg",
-                "howItWorksImage": "/images/local-shipping/how-it-works.jpg"
+                "howItWorksImage": "/images/local-shipping/how-it-works.jfif"
             }
         }
     ]
