@@ -8,46 +8,46 @@ export default function HomeServices() {
     const services = [
         {
             title: 'Sea Transport',
-            description: 'Following the quality of our service thus having gained trust of our many clients.',
+            description: 'Secure and cost-effective ocean freight solutions for businesses and individuals.',
             image: '/icons/ship-icon.svg',
-            url: '/services/sea-transport' // Replace with the actual URL for the service
+            url: '/services/sea-transport'
         },
         {
             title: 'Warehousing',
-            description: 'Following the quality of our service thus having gained trust of our many clients.',
+            description: 'Flexible storage solutions to keep your inventory safe and organized.',
             image: '/icons/ware-house-icon.svg',
-            url: '/services/warehousing' // Replace with the actual URL for the service
+            url: '/services/warehousing'
         },
         {
-            title: 'Air Fright',
-            description: 'Following the quality of our service thus having gained trust of our many clients.',
+            title: 'Air Freight',
+            description: 'Fast and reliable air freight for time-sensitive shipments.',
             image: '/icons/Flight-icon.svg',
-            url: '/services/air-freight' // Replace with the actual URL for the service
+            url: '/services/air-freight'
         },
         {
-            title: 'Local Shipping',
-            description: 'Following the quality of our service thus having gained trust of our many clients.',
+            title: 'Local Freight',
+            description: 'Efficient delivery within city or regional limits.',
             image: '/icons/viechile-icon.svg',
-            url: '/services/local-shipping' // Replace with the actual URL for the service
-        },
-        {
-            title: 'DHL Courier',
-            description: 'Following the quality of our service thus having gained trust of our many clients.',
-            image: '/icons/dhl-icon.svg',
-            url: '/services/dhl-courier' // Replace with the actual URL for the service
-        },
-        {
-            title: 'Packing',
-            description: 'Following the quality of our service thus having gained trust of our many clients.',
-            image: '/icons/packing-icon.svg',
-            url: '/services/packing' // Replace with the actual URL for the service
+            url: '/services/local-freight'
         },
         {
             title: 'Relocation',
-            description: 'Following the quality of our service thus having gained trust of our many clients.',
+            description: 'Smooth relocation services for individuals and businesses.',
             image: '/icons/relocation-icon.svg',
-            url: '/services/relocation' // Replace with the actual URL for the service
+            url: '/services/relocating'
         },
+        {
+            title: 'Packing',
+            description: 'Professional packing to protect your items during transit.',
+            image: '/icons/packing-icon.svg',
+            url: '/services/packing'
+        },
+        {
+            title: 'DHL Shipping',
+            description: 'Fast, secure global shipping with DHL.',
+            image: '/icons/dhl-icon.svg',
+            url: '/services/dhl-shipping'
+        }
     ];
 
 

@@ -133,7 +133,7 @@
             ],
             "images": {
                 "bannerImage": "/images/ware-houseing/banner.jpg",
-                "mainImage": "/images/ware-houseing/main.jfif",
+                "mainImage": "/images/ware-houseing/main.jpg",
                 "benefitSectionImage": "/images/ware-houseing/benefits.avif",
                 "howItWorksImage": "/images/ware-houseing/how-it-works.webp"
             }
@@ -205,17 +205,17 @@
             ],
             "images": {
                 "bannerImage": "/images/about-bg.png",
-                "mainImage": "/images/air-freight/main.jfif",
+                "mainImage": "/images/air-freight/main.jpg",
                 "benefitSectionImage": "/images/air-freight/benefits.jpg",
                 "howItWorksImage": "/images/air-freight/how-it-works.png"
             }
         },
         {
-            "title": "Local Shipping",
-            "url": "local-shipping",
+            "title": "Local Freight",
+            "url": "local-freight",
             "icon": "/icons/viechile-icon.svg",
-            "heading": "Reliable and Affordable Local Shipping Solutions",
-            "detailedDescription": "Our local shipping solutions are ideal for businesses looking to deliver goods within the same city or region efficiently. With a dedicated fleet of vehicles and experienced drivers, we offer reliable delivery options tailored to your needs. Whether it's a single package or bulk delivery, our team ensures your shipment reaches its destination on time and in perfect condition. Our services include flexible delivery schedules, real-time tracking, and customized solutions based on cargo type, weight, and size.",
+            "heading": "Reliable and Affordable Local Freight Solutions",
+            "detailedDescription": "Our local freight solutions are ideal for businesses looking to deliver goods within the same city or region efficiently. With a dedicated fleet of vehicles and experienced drivers, we offer reliable delivery options tailored to your needs. Whether it's a single package or bulk delivery, our team ensures your shipment reaches its destination on time and in perfect condition. Our services include flexible delivery schedules, real-time tracking, and customized solutions based on cargo type, weight, and size.",
             "benefits": [
                 {
                     "icon": "📅",
@@ -225,7 +225,7 @@
                 {
                     "icon": "💸",
                     "title": "Economical",
-                    "description": "Cost-effective local shipping rates."
+                    "description": "Cost-effective Local Freight rates."
                 },
                 {
                     "icon": "🔒",
@@ -280,6 +280,195 @@
                 "mainImage": "/images/local-shipping/main.png",
                 "benefitSectionImage": "/images/local-shipping/benefits.jpg",
                 "howItWorksImage": "/images/local-shipping/how-it-works.jfif"
+            }
+        },
+        {
+            "title": "Relocating",
+            "url": "relocating",
+            "icon": "/icons/relocation-icon.svg",
+            "heading": "Smooth and Hassle-Free Relocation Services",
+            "detailedDescription": "Our relocation services are designed to make moving stress-free, efficient, and secure. Whether it's a domestic or international move, our team of experts ensures that your belongings are packed, transported, and unpacked with utmost care. We offer customizable plans to meet all your moving needs, including home and office relocation, pet relocation, vehicle transport, and temporary storage solutions.",
+            "benefits": [
+                {
+                    "icon": "🧳",
+                    "title": "Comprehensive Moving Solutions",
+                    "description": "Full-service support from packing to setup in your new location."
+                },
+                {
+                    "icon": "📦",
+                    "title": "Safe and Secure Packing",
+                    "description": "Professional packing techniques to ensure item safety during transport."
+                },
+                {
+                    "icon": "⏳",
+                    "title": "Time-Efficient",
+                    "description": "Organized and timely relocation processes to reduce downtime."
+                },
+                {
+                    "icon": "🗺️",
+                    "title": "Local & International Options",
+                    "description": "Relocation support for both domestic and international moves."
+                }
+            ],
+            "howItWorks": [
+                {
+                    "step": "Step 1",
+                    "title": "Consultation",
+                    "description": "Initial consultation to understand specific moving requirements.",
+                    "icon": "📞"
+                },
+                {
+                    "step": "Step 2",
+                    "title": "Planning and Scheduling",
+                    "description": "Our team schedules and plans the entire moving process.",
+                    "icon": "📅"
+                },
+                {
+                    "step": "Step 3",
+                    "title": "Packing and Loading",
+                    "description": "All items are securely packed and loaded for transportation.",
+                    "icon": "📦"
+                },
+                {
+                    "step": "Step 4",
+                    "title": "Transportation",
+                    "description": "Relocating items to the new location with real-time tracking.",
+                    "icon": "🚚"
+                },
+                {
+                    "step": "Step 5",
+                    "title": "Unpacking and Setup",
+                    "description": "Unpacking and assisting with the setup in your new location.",
+                    "icon": "🏠"
+                }
+            ],
+            "images": {
+                "bannerImage": "/images/relocation/banner.jpg",
+                "mainImage": "/images/relocation/main.webp",
+                "benefitSectionImage": "/images/relocation/benefits.jpg",
+                "howItWorksImage": "/images/relocation/how-it-works.webp"
+            }
+        },
+        {
+            "title": "Packing",
+            "url": "packing",
+            "icon": "/icons/packing-icon.svg",
+            "heading": "Professional Packing Services for Safe Transport",
+            "detailedDescription": "Our packing services provide high-quality packing materials and expert techniques to ensure the safety of your belongings. We offer packing for fragile items, electronics, furniture, and large appliances, along with labeling and inventory management for a seamless moving experience.",
+            "benefits": [
+                {
+                    "icon": "📦",
+                    "title": "High-Quality Materials",
+                    "description": "Using durable and protective materials for all items."
+                },
+                {
+                    "icon": "🧩",
+                    "title": "Itemized Packing",
+                    "description": "Efficient labeling and itemization for easier unpacking."
+                },
+                {
+                    "icon": "🖥️",
+                    "title": "Fragile Item Care",
+                    "description": "Special care for delicate and valuable items."
+                },
+                {
+                    "icon": "✅",
+                    "title": "Customizable Packing Options",
+                    "description": "Choose full-service or partial packing based on your needs."
+                }
+            ],
+            "howItWorks": [
+                {
+                    "step": "Step 1",
+                    "title": "Initial Assessment",
+                    "description": "Our team assesses packing requirements for all items.",
+                    "icon": "📋"
+                },
+                {
+                    "step": "Step 2",
+                    "title": "Material Preparation",
+                    "description": "Packing materials and labels are prepared.",
+                    "icon": "📦"
+                },
+                {
+                    "step": "Step 3",
+                    "title": "Professional Packing",
+                    "description": "Our experts carefully pack items to prevent damage.",
+                    "icon": "🛠️"
+                },
+                {
+                    "step": "Step 4",
+                    "title": "Labeling and Documentation",
+                    "description": "Each package is labeled and documented for inventory.",
+                    "icon": "📝"
+                }
+            ],
+            "images": {
+                "bannerImage": "/images/packing/banner.jpg",
+                "mainImage": "/images/packing/main.jpg",
+                "benefitSectionImage": "/images/packing/benefits.jpg",
+                "howItWorksImage": "/images/packing/how-it-works.jpg"
+            }
+        },
+        {
+            "title": "DHL Shipping",
+            "url": "dhl-shipping",
+            "icon": "/icons/dhl-icon.svg",
+            "heading": "Fast and Reliable DHL Shipping Services",
+            "detailedDescription": "We offer reliable DHL shipping services for both local and international deliveries, ensuring secure, fast, and trackable shipment options. Whether you need express shipping or economy options, we work with DHL to offer a range of flexible solutions that meet your budget and time requirements.",
+            "benefits": [
+                {
+                    "icon": "✈️",
+                    "title": "Express Shipping",
+                    "description": "Priority shipping for time-sensitive packages."
+                },
+                {
+                    "icon": "📦",
+                    "title": "Reliable Tracking",
+                    "description": "Track your shipments in real-time from origin to destination."
+                },
+                {
+                    "icon": "🌍",
+                    "title": "Global Reach",
+                    "description": "DHL’s extensive network covers over 220 countries."
+                },
+                {
+                    "icon": "🔐",
+                    "title": "Secure Handling",
+                    "description": "Packages handled with utmost care and security."
+                }
+            ],
+            "howItWorks": [
+                {
+                    "step": "Step 1",
+                    "title": "Choose Shipping Option",
+                    "description": "Select express or economy based on needs.",
+                    "icon": "⚙️"
+                },
+                {
+                    "step": "Step 2",
+                    "title": "Packaging and Documentation",
+                    "description": "Packages are packed and documented as per DHL guidelines.",
+                    "icon": "📑"
+                },
+                {
+                    "step": "Step 3",
+                    "title": "Shipment Booking",
+                    "description": "We book the shipment with DHL, ensuring timely dispatch.",
+                    "icon": "🚚"
+                },
+                {
+                    "step": "Step 4",
+                    "title": "Tracking and Updates",
+                    "description": "Monitor the shipment status in real-time until delivery.",
+                    "icon": "📡"
+                }
+            ],
+            "images": {
+                "bannerImage": "/images/dhl/banner.webp",
+                "mainImage": "/images/dhl/main.webp",
+                "benefitSectionImage": "/images/dhl/benefits.webp",
+                "howItWorksImage": "/images/dhl/how-it-works.jpg"
             }
         }
     ]
