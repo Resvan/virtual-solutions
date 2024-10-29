@@ -24,7 +24,7 @@ export default function page() {
             image: '/icons/Flight-icon.svg'
         },
         {
-            title: 'Local Shipping',
+            title: 'Local Freight',
             description: 'Following the quality of our service thus having gained trust of our many clients.',
             image: '/icons/viechile-icon.svg'
         },

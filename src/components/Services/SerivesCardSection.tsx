@@ -16,7 +16,7 @@ export default function ServicesCardSection() {
             image: '/images/air-fright.png'
         },
         {
-            heading: 'Local Shipping',
+            heading: 'Local Freight',
             subheading: 'Regional Delivery',
             image: '/images/road-transportation.png'
         },

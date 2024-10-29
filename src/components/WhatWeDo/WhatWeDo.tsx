@@ -30,10 +30,10 @@ const WhatWeDo = () => {
             url: '/services/air-freight'
         },
         {
-            title: 'Local Shipping',
+            title: 'Local Freight',
             description: 'Following the quality of our service thus having gained trust of our many clients.',
             image: '/icons/viechile-icon.svg',
-            url: '/services/local-shipping'
+            url: '/services/local-freight'
         },
         {
             title: 'DHL Courier',

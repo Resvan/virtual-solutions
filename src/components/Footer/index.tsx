@@ -17,7 +17,7 @@ export default function Footer() {
             items: [
                 { text: 'Sea Transport', url: '/products/laptops' },
                 { text: 'Air Freight', url: '/products/smartphones' },
-                { text: 'Local Shipping', url: '/products/cameras' },
+                { text: 'Local Freight', url: '/products/cameras' },
                 { text: 'Packing', url: '/products/accessories' },
             ]
         },
