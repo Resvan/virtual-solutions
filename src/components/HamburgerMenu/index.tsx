@@ -1,5 +1,5 @@
 'use client'
-import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 
 interface Navlink {
@@ -13,23 +13,29 @@ interface HamburgerMenuProps {
 
 export default function HamburgerMenu({ navLinks }: HamburgerMenuProps) {
     const [isOpen, setIsOpen] = useState(false);
+    const router = useRouter();
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
+    };
+
+    const handleClick = (link: string) => {
+        router.push(link);
+        toggleMenu();
     };
 
     return (
         <nav className="block lg:hidden">
             <div className="flex items-center justify-between">
                 <button
-                    className="inline-block p-2 text-white rounded-md focus:outline-none"
+                    className="p-2 rounded-md focus:outline-none"
                     onClick={toggleMenu}
                     aria-label="Toggle menu"
                 >
                     <svg
-                        className={`w-6 h-6 transform transition-transform duration-300 ${isOpen ? 'rotate-90' : ''}`}
+                        className={`w-8 h-8 transition-transform duration-300 ${isOpen ? 'rotate-90' : ''}`}
                         fill="none"
-                        stroke="currentColor"
+                        stroke="white"
                         viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg"
                     >
@@ -48,25 +54,24 @@ export default function HamburgerMenu({ navLinks }: HamburgerMenuProps) {
                             className={isOpen ? 'block' : 'hidden'}
                         />
                     </svg>
+
                 </button>
             </div>
-            {
-                isOpen &&
-                (
-                    <nav
-                        className={`absolute top-full right-0 w-full bg-white transform transition-transform duration-300 z-[10] ${isOpen ? 'translate-y-0' : '-translate-y-full'
-                            } md:translate-y-0`}
-                    >
-                        {
-                            navLinks.map((link, idx) => (
-                                <div key={idx} className='text-dark-blue font-rubik text-base font-normal leading-[136%] py-3 border-b border-gray'>
-                                    <Link className='px-4' href={link.url}>{link.text}</Link>
-                                </div>
-                            ))
-                        }
-                    </nav>
-                )
-            }
+            {isOpen && (
+                <div
+                    className="absolute bg-white top-full right-0 w-full bg-gray-900 text-dark-blue shadow-lg rounded-md mt-2 py-4 z-10 transform transition-transform duration-500 ease-out"
+                >
+                    {navLinks.map((link, idx) => (
+                        <div
+                            key={idx}
+                            className="font-rubik text-lg font-semibold px-6 py-3 border-b border-gray/15 cursor-pointer hover:bg-gray-800 hover:underline transition-all duration-300"
+                            onClick={() => handleClick(link.url)}
+                        >
+                            {link.text}
+                        </div>
+                    ))}
+                </div>
+            )}
         </nav>
     );
 }

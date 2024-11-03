@@ -11,7 +11,7 @@ export default function WhyUs() {
             <div className="w-full h-1/2 absolute top-0 left-0 half-bg-gradient"></div>
 
             {/* Content Container */}
-            <div className="bg-white mt-6 grid gap-8 md:gap-10 lg:gap-20 grid-cols-1 md:grid-cols-2 p-10 md:p-20 xl:container mx-auto z-10 relative">
+            <div className="bg-white mt-6 grid gap-8 md:gap-10 lg:gap-20 grid-cols-1 md:grid-cols-2 p-5 md:p-20 xl:container mx-auto z-10 relative">
 
                 {/* Text Section */}
                 <MotionContainer classNames="">
