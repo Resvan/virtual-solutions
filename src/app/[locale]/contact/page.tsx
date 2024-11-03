@@ -35,7 +35,7 @@ interface ApiResponse {
     message: string;
 }
 
-export default function page() {
+export default function Page() {
     const t = useTranslations("Header");
 
     const { register, handleSubmit, formState: { errors }, reset } = useForm<FormData>({
